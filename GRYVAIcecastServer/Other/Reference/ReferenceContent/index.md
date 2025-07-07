@@ -1,3 +1,0 @@
-# GRYVAIcecastServer reference
-
-TODO

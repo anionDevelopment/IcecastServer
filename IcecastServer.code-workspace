@@ -20,12 +20,12 @@
 				]
 			},
 			{
-				"label": "GRYVAIcecastServer: Run example",
+				"label": "IcecastServer: Run example",
 				"command": "python3 RunExample.py",
 				"args": [],
 				"type": "shell",
 				"options": {
-					"cwd": "${workspaceFolder}/GRYVAIcecastServer/Other/Examples/MinimalDockerComposeFile"
+					"cwd": "${workspaceFolder}/IcecastServer/Other/Examples/MinimalDockerComposeFile"
 				}
 			}
 		]
