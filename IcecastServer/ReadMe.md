@@ -1,14 +1,14 @@
-# GRYVAIcecastServer
+# IcecastServer
 
 ## General
 
-[GRYVAIcecastServer](https://github.com/anionDev/GRYVAIcecastServer) is a docker-image for simply running an [Icecast](https://icecast.org)-server in a docker-container.
+[IcecastServer](https://github.com/anionDev/IcecastServer) is a docker-image for simply running an [Icecast](https://icecast.org)-server in a docker-container.
 It was originally written by [infiniteproject](https://github.com/infiniteproject/icecast).
-The details can be found [here](https://github.com/anionDev/GRYVAIcecastServer/tree/main/GRYVAIcecastServer).
+The details can be found [here](https://github.com/anionDev/IcecastServer/tree/main/IcecastServer).
 
 ## Reference
 
-The reference can be found [here](https://github.com/anionDev/GRYVAIcecastServer/blob/main/GRYVAIcecastServer/Other/Reference/ReferenceContent/index.md).
+The reference can be found [here](https://github.com/anionDev/IcecastServer/blob/main/IcecastServer/Other/Reference/ReferenceContent/index.md).
 
 ## Development
 
@@ -26,4 +26,4 @@ This repository applies the [CommonProjectStructure](https://projects.aniondev.d
 
 ## License
 
-See [License.txt](https://github.com/anionDev/GRYVAIcecastServer/blob/main/License.txt) for license-information.
+See [License.txt](https://github.com/anionDev/IcecastServer/blob/main/License.txt) for license-information.

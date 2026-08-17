@@ -1,11 +1,12 @@
 @startuml CodeUnits-Overview
-title CodeUnits of GRYVAIcecastServer
+skinparam defaultFontName "DejaVu Sans"
+title CodeUnits of IcecastServer
 
-[GRYVAIcecastServer]
-note as GRYVAIcecastServerNote
-  GRYVAIcecastServer is a docker-image for simply running an Icecast-server in a docker-container.
+[IcecastServer]
+note as IcecastServerNote
+  IcecastServer is a docker-image for simply running an Icecast-server in a docker-container.
 end note
-GRYVAIcecastServer .. GRYVAIcecastServerNote
+IcecastServer .. IcecastServerNote
 
 
 @enduml

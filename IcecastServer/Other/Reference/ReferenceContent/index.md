@@ -1,3 +1,3 @@
-# GRYVAIcecastServer reference
+# IcecastServer reference
 
 TODO
