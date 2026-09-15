@@ -2,6 +2,7 @@ ARG image_alpine
 FROM ${image_alpine}
 
 ARG TargetEnvironmentType
+ARG icecast_version
 ARG Version="1.0.1"
 LABEL maintainer="marius.goecke@gmail.com"
 LABEL version="v$Version"
@@ -9,7 +10,7 @@ LABEL description="IcecastServer is a docker-image for simply running an Icecast
 
 RUN addgroup -S icecast && adduser -S icecast
 
-RUN apk add --update icecast mailcap && \
+RUN apk add --update icecast=${icecast_version} mailcap && \
     rm -rf /var/cache/apk/* && \
     mkdir /var/log/icecast && \
     touch /var/log/icecast/access.log && \
