@@ -7,16 +7,16 @@ tasks:
     silent: true
     dir: "."
     cmds:
-      - scbuildcodeunits
+      - "scbuildcodeunits"
     aliases:
       - basebuildallcodeunits
       - bb
 
-  icecastserverRunExample:
+  IcecastserverRunExample:
     desc: "IcecastServer: Run example"
     silent: true
     dir: "./IcecastServer/Other/Examples/MinimalDockerComposeFile"
     cmds:
-      - python3 RunExample.py
+      - "python3 RunExample.py"
     aliases:
       - icecastserverrunexample

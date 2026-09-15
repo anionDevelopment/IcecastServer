@@ -1,8 +1,9 @@
-FROM alpine:latest
+ARG image_alpine
+FROM ${image_alpine}
 
 ARG TargetEnvironmentType
-ARG Version="0.1.3"
-LABEL maintainer "marius.goecke@gmail.com"
+ARG Version="1.0.1"
+LABEL maintainer="marius.goecke@gmail.com"
 LABEL version="v$Version"
 LABEL description="IcecastServer is a docker-image for simply running an Icecast-server in a docker-container."
 
