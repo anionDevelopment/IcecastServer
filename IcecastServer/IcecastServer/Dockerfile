@@ -1,21 +1,23 @@
-FROM alpine:latest
+ARG image_alpine
+FROM ${image_alpine}
 
 ARG TargetEnvironmentType
-ARG Version="0.1.3"
-LABEL maintainer "marius.goecke@gmail.com"
+ARG icecast_version
+ARG Version="1.0.1"
+LABEL maintainer="marius.goecke@gmail.com"
 LABEL version="v$Version"
-LABEL description="GRYVAIcecastServer is a docker-image for simply running an Icecast-server in a docker-container."
+LABEL description="IcecastServer is a docker-image for simply running an Icecast-server in a docker-container."
 
 RUN addgroup -S icecast && adduser -S icecast
 
-RUN apk add --update icecast mailcap && \
+RUN apk add --update icecast=${icecast_version} mailcap && \
     rm -rf /var/cache/apk/* && \
     mkdir /var/log/icecast && \
     touch /var/log/icecast/access.log && \
     touch /var/log/icecast/error.log && \
     chmod -R 777 /var/log/icecast
 
-COPY GRYVAIcecastServer/EntryPointScript.sh /EntryPointScript.sh
+COPY IcecastServer/EntryPointScript.sh /EntryPointScript.sh
 RUN chmod +x /EntryPointScript.sh
 
 EXPOSE 8000

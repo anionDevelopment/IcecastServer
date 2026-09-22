@@ -2,9 +2,9 @@ version: '3.2'
 
 services:
 
-  gryvaicecastserver:
-    image: gryvaicecastserver:0.1.1
-    container_name: 'gryvaicecastserver'
+  icecastserver:
+    image: icecastserver:0.1.1
+    container_name: 'icecastserver'
     environment:
       - icecast_hostname=MyServer
       - icecast_location=Germany

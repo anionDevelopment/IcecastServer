@@ -1,54 +1,54 @@
 {
-	"folders": [
-		{
-			"path": ".",
-			"name": "Entire repository"
-		}
-	],
-	"tasks": {
-		"version": "2.0.0",
-		"tasks": [
-			{
-				"label": "Base: Build all codeunits",
-				"command": "scbuildcodeunits",
-				"type": "shell",
-				"options": {
-					"cwd": "${workspaceFolder}"
-				},
-				"aliases": [
-					"bb"
-				]
-			},
-			{
-				"label": "GRYVAIcecastServer: Run example",
-				"command": "python3 RunExample.py",
-				"args": [],
-				"type": "shell",
-				"options": {
-					"cwd": "${workspaceFolder}/GRYVAIcecastServer/Other/Examples/MinimalDockerComposeFile"
-				}
-			}
-		]
-	},
-	"launch": {
-		"version": "0.2.0",
-		"configurations": [
-			{
-				"name": "Debug current file",
-				"type": "python",
-				"request": "launch",
-				"program": "${file}",
-				"console": "integratedTerminal"
-			}
-		]
-	},
-	"settings": {
-		"spellright.language": [
-			"en"
-		],
-		"spellright.documentTypes": [
-			"markdown",
-			"plaintext"
-		]
-	}
+  "folders": [
+    {
+      "path": ".",
+      "name": "Entire repository"
+    }
+  ],
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Base: Build all codeunits",
+        "command": "scbuildcodeunits",
+        "type": "shell",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "aliases": [
+          "bb"
+        ]
+      },
+      {
+        "label": "IcecastServer: Run example",
+        "command": "python3 RunExample.py",
+        "args": [],
+        "type": "shell",
+        "options": {
+          "cwd": "${workspaceFolder}/IcecastServer/Other/Examples/MinimalDockerComposeFile"
+        }
+      }
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug current file",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal"
+      }
+    ]
+  },
+  "settings": {
+    "spellright.language": [
+      "en"
+    ],
+    "spellright.documentTypes": [
+      "markdown",
+      "plaintext"
+    ]
+  }
 }
