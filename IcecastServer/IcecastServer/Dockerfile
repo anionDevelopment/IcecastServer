@@ -3,7 +3,7 @@ FROM ${image_alpine}
 
 ARG TargetEnvironmentType
 ARG icecast_version
-ARG Version="1.0.2"
+ARG Version="1.0.3"
 LABEL maintainer="marius.goecke@gmail.com"
 LABEL version="v$Version"
 LABEL description="IcecastServer is a docker-image for simply running an Icecast-server in a docker-container."
