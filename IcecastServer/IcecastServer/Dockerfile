@@ -22,4 +22,5 @@ RUN chmod +x /EntryPointScript.sh
 
 EXPOSE 8000
 VOLUME ["/var/log/icecast"]
+HEALTHCHECK --interval=30s --timeout=20s --start-period=1m CMD wget --quiet --spider http://127.0.0.1:8000/status-json.xsl
 ENTRYPOINT ["/EntryPointScript.sh"]
